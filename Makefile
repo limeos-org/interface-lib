@@ -1,6 +1,6 @@
 CC = clang
 PKG_CONFIG = x11 cairo
-CFLAGS = -Wall -Wextra -g $(shell pkg-config --cflags $(PKG_CONFIG))
+CFLAGS = -Wall -Wextra -g -MMD -MP $(shell pkg-config --cflags $(PKG_CONFIG))
 LIBS = $(shell pkg-config --libs $(PKG_CONFIG))
 
 # Build Configuration
