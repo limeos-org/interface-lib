@@ -1,5 +1,6 @@
 # Build artifacts
 obj/
+bin/
 lib/
 
 # Editor and system files
