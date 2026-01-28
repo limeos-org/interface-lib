@@ -59,12 +59,21 @@ section listed first will take precedence.
 
 This subsection explains how to compile the drawing library from source.
 
-First, ensure you have `clang`, `make`, and the required dependencies installed
-on your system:
+First, install the required dependencies. For Debian-based Linux distributions,
+run:
 
 ```bash
-sudo apt install libx11-dev libcairo2-dev
+sudo apt install \
+   clang \
+   make \
+   pkg-config \
+   libx11-dev \
+   libcairo2-dev
 ```
+
+If you're not using a Debian-based distribution, package names may differ.
+In that case, consult your distribution's package repositories
+(package listings) to find the correct package names for your system.
 
 Then, run the following command from the repository root:
 
