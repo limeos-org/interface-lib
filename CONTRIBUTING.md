@@ -19,6 +19,7 @@ section listed first will take precedence.
 **Repository Contributing Guidelines**
 
 - [Building the drawing library](#building-the-drawing-library)
+- [Installing the drawing library](#installing-the-drawing-library)
 - [Using the drawing library](#using-the-drawing-library)
 
 **General Contributing Guidelines**
@@ -56,11 +57,71 @@ section listed first will take precedence.
 
 ### Building the drawing library
 
-_TODO_
+This subsection explains how to compile the drawing library from source.
+
+First, ensure you have `clang`, `make`, and the required dependencies installed
+on your system:
+
+```bash
+sudo apt install libx11-dev libcairo2-dev
+```
+
+Then, run the following command from the repository root:
+
+```bash
+make
+```
+
+This compiles all source files and produces a static library at
+`lib/limeos-drawing-lib.a`.
+
+To remove build artifacts, run:
+
+```bash
+make clean
+```
+
+### Installing the drawing library
+
+This subsection explains how to install the drawing library to your system.
+
+First, build the library by following the steps in
+[Building the drawing library](#building-the-drawing-library).
+
+Then, install the library and headers to your system:
+
+```bash
+sudo make install
+```
+
+This installs the static library to `/usr/local/lib/` and headers to
+`/usr/local/include/`.
+
+After rebuilding the library, run `sudo make install` again to update the
+installed files. You do not need to uninstall first.
+
+To uninstall, run:
+
+```bash
+sudo make uninstall
+```
 
 ### Using the drawing library
 
-_TODO_
+This subsection explains how to integrate the drawing library into other LimeOS
+projects.
+
+First, include the main header in your source files:
+
+```c
+#include <limeos-drawing-lib.h>
+```
+
+Finally, add the library to your project's Makefile:
+
+```makefile
+LIBS += -l:limeos-drawing-lib.a
+```
 
 ## General Contributing Guidelines
 

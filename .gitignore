@@ -1,36 +1,23 @@
-# Ignore object and binary files
+# Build artifacts
 obj/
-bin/
-tmp/
+lib/
 
-# Ignore editor and system files
+# Editor and system files
 *.swp
 *~
 .DS_Store
 
-# Ignore build files
+# Build files
 *.o
-*.out
+*.a
 *.d
 
-# Ignore logs
+# Logs
 *.log
 
-# Ignore coverage reports
-coverage/
-
-# Ignore dependency directories
-node_modules/
-__pycache__/
-
-# Ignore temporary files
-*.tmp
-*.bak
-*.backup
-
-# Ignore user-specific config files
+# User-specific config files
 .vscode/
 .idea/
 
-# Ignore generated tooling files
+# Generated tooling files
 compile_commands.json
