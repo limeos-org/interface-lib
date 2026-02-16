@@ -18,9 +18,9 @@ section listed first will take precedence.
 
 **Repository Contributing Guidelines**
 
-- [Building the drawing library](#building-the-drawing-library)
-- [Installing the drawing library](#installing-the-drawing-library)
-- [Using the drawing library](#using-the-drawing-library)
+- [Building the interface library](#building-the-interface-library)
+- [Installing the interface library](#installing-the-interface-library)
+- [Using the interface library](#using-the-interface-library)
 
 **General Contributing Guidelines**
 
@@ -55,9 +55,9 @@ section listed first will take precedence.
 
 ## Repository Contributing Guidelines
 
-### Building the drawing library
+### Building the interface library
 
-This subsection explains how to compile the drawing library from source.
+This subsection explains how to compile the interface library from source.
 
 First, install the required dependencies. For Debian-based Linux distributions,
 run:
@@ -82,7 +82,7 @@ make
 ```
 
 This compiles all source files and produces a static library at
-`lib/limeos-drawing-lib.a`.
+`lib/limeos-interface-lib.a`.
 
 To remove build artifacts, run:
 
@@ -90,12 +90,12 @@ To remove build artifacts, run:
 make clean
 ```
 
-### Installing the drawing library
+### Installing the interface library
 
-This subsection explains how to install the drawing library to your system.
+This subsection explains how to install the interface library to your system.
 
 First, build the library by following the steps in
-[Building the drawing library](#building-the-drawing-library).
+[Building the interface library](#building-the-interface-library).
 
 Then, install the library and headers to your system:
 
@@ -115,21 +115,21 @@ To uninstall, run:
 sudo make uninstall
 ```
 
-### Using the drawing library
+### Using the interface library
 
-This subsection explains how to integrate the drawing library into other LimeOS
+This subsection explains how to integrate the interface library into other LimeOS
 projects.
 
 First, include the main header in your source files:
 
 ```c
-#include <limeos-drawing-lib.h>
+#include <limeos-interface-lib.h>
 ```
 
 Finally, add the library to your project's Makefile:
 
 ```makefile
-LIBS += -l:limeos-drawing-lib.a
+LIBS += -l:limeos-interface-lib.a
 ```
 
 ## General Contributing Guidelines

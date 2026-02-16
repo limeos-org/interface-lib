@@ -1,0 +1,10 @@
+prefix=@PREFIX@
+libdir=${prefix}/lib
+includedir=${prefix}/include
+
+Name: limeos-interface-lib
+Description: Graphical interface library for LimeOS
+Version: 0.1.0
+Requires: x11 cairo
+Libs: -L${libdir} -l:limeos-interface-lib.a
+Cflags: -I${includedir}
