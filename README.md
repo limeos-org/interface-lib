@@ -8,11 +8,10 @@
 
 ######
 
-This library provides the graphical interface layer for LimeOS. It owns all
-interaction with the X server, including drawing, input handling, and event
-management. By centralizing these responsibilities, it establishes a clear and
-consistent foundation for building graphical components while preserving the
-simplicity, performance, and control of native C.
+This library provides the graphical interface layer for LimeOS. It manages all
+interaction with the X server, including drawing, input, and event handling.
+By centralizing these responsibilities, it creates a clear and consistent
+foundation while preserving the simplicity, performance, and control of native C.
 
 > This application has **not entered development** yet. Once work begins, this
 > notice will be updated to state that the application is a work in progress.
