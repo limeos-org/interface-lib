@@ -8,10 +8,11 @@
 
 ######
 
-This UI library for C blends the declarative elegance of modern web frameworks
-with the simplicity and control of native code. Designed with minimalism and
-performance in mind, it provides a clean and intuitive component model for
-building lightweight, custom interfaces.
+This library provides the graphical interface layer for LimeOS. It owns all
+interaction with the X server, including drawing, input handling, and event
+management. By centralizing these responsibilities, it establishes a clear and
+consistent foundation for building graphical components while preserving the
+simplicity, performance, and control of native C.
 
 > This application has **not entered development** yet. Once work begins, this
 > notice will be updated to state that the application is a work in progress.
